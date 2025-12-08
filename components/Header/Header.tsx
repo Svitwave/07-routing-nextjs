@@ -1,31 +1,6 @@
-// import css from "./Header.module.css";
-// import Link from "next/link";
-
-// const Header = () => {
-//   return (
-//     <header className={css.header}>
-//       <Link href="/" aria-label="Home">
-//         NoteHub
-//       </Link>
-//       <nav aria-label="Main Navigation">
-//         <ul className={css.navigation}>
-//           <li>
-//             <Link href="/">Home</Link>
-//           </li>
-//           <li>
-//             <Link href="/notes">Notes</Link>
-//           </li>
-//         </ul>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;
-
 import css from "./Header.module.css";
 import Link from "next/link";
-import TagsMenu from "../TagsMenu/TagsMenu";
+// import TagsMenu from "../TagsMenu/TagsMenu";
 
 export const Header = () => {
   return (
@@ -36,10 +11,14 @@ export const Header = () => {
       <nav aria-label="Main Navigation">
         <ul className={css.navigation}>
           <li>
-            <Link href="/">Home</Link>
+            <Link className={css.navigationLink} href="/">
+              Home
+            </Link>
           </li>
           <li>
-            <TagsMenu />
+            <Link className={css.navigationLink} href="/notes/filter/all">
+              Notes
+            </Link>
           </li>
         </ul>
       </nav>
