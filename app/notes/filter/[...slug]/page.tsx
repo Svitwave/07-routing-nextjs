@@ -13,7 +13,7 @@ type Props = {
 
 export default async function Notes({ params }: Props) {
   const { slug } = await params;
-  const tag = slug[0] || "All";
+  const tag = slug[0] || "all";
 
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
