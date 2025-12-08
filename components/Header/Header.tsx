@@ -16,7 +16,7 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className={css.navigationLink} href="/notes/filter/All">
+            <Link className={css.navigationLink} href="/notes/filter/all">
               Notes
             </Link>
           </li>
