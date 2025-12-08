@@ -10,12 +10,12 @@ export interface NoteSearchResponse {
 }
 
 export async function fetchNotes(
-  SearchText: string,
+  searchText: string,
   page: number,
   tag?: string
 ) {
   const params: Record<string, string | number> = {
-    search: SearchText,
+    search: searchText,
     page,
     perPage: 10,
   };
